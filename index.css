@@ -51,6 +51,7 @@ img {
   display: flex;
   justify-content: space-around;
   gap: 0.5rem;
+  font-size: .8rem;
 }
 
 .fecha,
@@ -65,16 +66,26 @@ img {
   font-size: 1.3rem;
   font-weight: 500;
 }
-.lugar {
-  justify-content: center;
+.lugar{
+    padding: 1rem;
+    
 }
+
+
 .fecha_sub,
 .hora_sub {
   font-size: 0.8rem;
 }
 .lugar_enlace {
+    margin-top: 0.5rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  align-content: center;
+  justify-content: center;
+}
+.lugar_enlace img{
+    margin-top: 0.5rem;
+    padding: 0;
 }
 
 #countdown {
@@ -83,12 +94,12 @@ img {
 
 footer {
   padding-bottom: 1rem;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   color: #3e3e3e;
 }
 .firma {
   font-family: var(--f_damion);
-  font-size: 1em;
+  font-size: 1rem;
   color: #3f3f3f;
 }
 .firma:hover {
@@ -96,29 +107,37 @@ footer {
 }
 
 @media (min-width: 678px) {
-    main{
-        min-width: 480px;
-    }
-    .titulo {
-        padding: 1rem;        
-        font-size: 1rem;
-      }
-    .logo {
-         
-        font-size: 1.5em;
-      }
-    .subtitulo{
-        padding: 1rem; 
-        font-size: 2rem;
-    }
-    .datos{
-        padding: 2rem;
-    }
-    #countdown{
-        font-size: 1.6rem;
-    }
-    footer{
-        padding-top: 1rem;
-        font-size: 1rem;
-    }
+  main {
+    min-width: 480px;
+  }
+  .titulo {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .subtitulo {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .datos {
+    padding: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .fecha,
+  .hora {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .lugar_enlace {
+    font-size: 1.4rem;;
+  }
+  #countdown {
+    font-size: 1.6rem;
+  }
+  footer {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
 }
