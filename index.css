@@ -94,3 +94,31 @@ footer {
 .firma:hover {
   color: var(--c_oro);
 }
+
+@media (min-width: 678px) {
+    main{
+        min-width: 480px;
+    }
+    .titulo {
+        padding: 1rem;        
+        font-size: 1rem;
+      }
+    .logo {
+         
+        font-size: 1.5em;
+      }
+    .subtitulo{
+        padding: 1rem; 
+        font-size: 2rem;
+    }
+    .datos{
+        padding: 2rem;
+    }
+    #countdown{
+        font-size: 1.6rem;
+    }
+    footer{
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+}
