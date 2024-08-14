@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100..900&display=swap");
+:root {
+  --f_damion: "Damion", cursive;
+  --f_libre_b: "Libre Baskerville", serif;
+  --f_monts: "Montserrat", sans-serif;
+  --c_oro: #ebcf76;
+  /* --c_oro: #e4cd80; */
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #000000;
+}
+main {
+  max-width: 350px;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--c_oro); /* Dorado oscuro */
+  padding: 1rem;
+}
+
+.titulo {
+  padding-top: 1rem;
+  color: #fff;
+  font-family: var(--f_monts);
+  font-size: 0.8rem;
+}
+.logo {
+  font-family: var(--f_monts);
+  font-size: 1em;
+}
+.subtitulo {
+  font-family: var(--f_libre_b);
+  font-size: 1.5rem;
+}
+img {
+  padding: 0.5rem;
+}
+.datos {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.fecha,
+.hora,
+.lugar {
+  font-family: var(--f_libre_b);
+  color: #fff;
+  align-content: center;
+}
+.fecha,
+.hora {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.lugar {
+  justify-content: center;
+}
+.fecha_sub,
+.hora_sub {
+  font-size: 0.8rem;
+}
+.lugar_enlace {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#countdown {
+  font-weight: 600;
+}
+
+footer {
+  padding-bottom: 1rem;
+  font-size: 0.7em;
+  color: #3e3e3e;
+}
+.firma {
+  font-family: var(--f_damion);
+  font-size: 1em;
+  color: #3f3f3f;
+}
+.firma:hover {
+  color: var(--c_oro);
+}

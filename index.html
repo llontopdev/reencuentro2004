@@ -8,24 +8,58 @@
   </head>
   <body>
     <main class="container">
-      <p class="titulo">PROMOCION 2004 - FE Y ALEGRIA N°43</p>
-      <p class="logo">La esperanza de triunfar siempre estara viva</p>
-      <hr />
-      <p class="subtitulo">Reencuentro 20 años</p>
-      <hr />
-      <img src="" alt="brindis"/>
-      <div>
-        <p>26 <span>OCT</span></p>
-        <p>8 <span>PM</span></p>
-        <p>Centro de Recepciones <a href="https://maps.app.goo.gl/t9sSE8AhyMi8Q1Ne7">La Capullana</a> </p>
-      </div>
+      <p class="titulo">Promoción 2004<br> FE Y ALEGRIA N°43</p>
+      <p class="logo">La esperanza de triunfar<br> siempre estará viva</p>
       
-      <hr />
-      <p>Faltan x dias</p>
+      <p class="subtitulo">Reencuentro 20 años</p>
+      
+        <img src="brindis_sm.svg" alt="brindis"  width="80" height="80">
+      
+     
+      <div class="datos">
+        <div class="fecha">26 <div class="fecha_sub">OCT</div></div>
+        <div class="hora">8 <div class="hora_sub">PM</div></div>
+        <div class="lugar">Centro de Recepciones<br><a class="lugar_enlace" href="https://maps.app.goo.gl/t9sSE8AhyMi8Q1Ne7">"La Capullana"</a> </div>
+      </div>
+            
+      <p id="falta">Falta <div id="countdown"></div> </p>
+
+      <footer>
+      <p>2024 - <span><a class="firma" href="https://github.com/llontopdev">llontopdev</a></span> </p>
+    </footer>
+      
     </main>
 
-    <footer>
-      <p>2024 - <span><a href="https://github.com/llontopdev">llontopdev</a></span> </p>
-    </footer>
+    
+
+    <script>  
+      const countDownDate = new Date("Oct 26, 2024 20:00:00").getTime();
+    
+      // Actualiza la cuenta regresiva cada segundo
+      const x = setInterval(function() {
+    
+        // Obtén la fecha actual en milisegundos
+        const now = new Date().getTime();
+    
+        // Encuentra la distancia entre ahora y la fecha de conteo
+        const distance = countDownDate - now;
+    
+        // Calcula días, horas, minutos y segundos
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+        // Muestra el resultado en un elemento con el id "countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+    
+        // Si la cuenta regresiva ha terminado, escribe algún mensaje
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "¡EXPIRO!";
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
