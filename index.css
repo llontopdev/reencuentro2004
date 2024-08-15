@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Damion&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Edu+AU+VIC+WA+NT+Hand&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100..900&display=swap');
 :root {
   --f_damion: "Damion", cursive;
   --f_libre_b: "Libre Baskerville", serif;
   --f_monts: "Montserrat", sans-serif;
+  --f_edu: "Edu AU VIC WA NT Hand", cursive;
   --c_oro: #ebcf76;
   --c_gris_oscuro: #4b4b4b;
   /* --c_oro: #e4cd80; */
@@ -32,17 +33,20 @@ main {
 
 .titulo {
   padding-top: 1rem;
-  color: #fff;
+  padding-bottom: .5rem;
+  color: #9c9c9c;
   font-family: var(--f_monts);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .logo {
-  font-family: var(--f_monts);
-  font-size: 1em;
+  font-family: var(--f_edu);
+  color: #fff;
+  font-size: .7rem;
 }
 .subtitulo {
   font-family: var(--f_libre_b);
-  font-size: 1.5rem;
+  font-size: 2rem;
+margin: 1.2rem;
 }
 
 .imagen{
@@ -56,7 +60,7 @@ img {
   padding: 0.5rem;
 }
 .datos {
-  padding: 1rem;
+  padding: .8rem;
   display: flex;
   justify-content: space-around;
   gap: 0.5rem;
@@ -66,17 +70,16 @@ img {
 .fecha,
 .hora,
 .lugar {
-  font-family: var(--f_libre_b);
+  font-family: var(--f_monts);
   color: #fff;
   align-content: center;
 }
 .fecha,
 .hora {
   font-size: 1.3rem;
-  font-weight: 500;
 }
 .lugar{
-    padding: 1rem;    
+    padding: .5rem;    
 }
 
 
@@ -85,18 +88,19 @@ img {
   font-size: 0.8rem;
 }
 .lugar_enlace {
-    margin-top: 0.5rem;
   color: #fff;
   font-size: 1rem;
   align-content: center;
   justify-content: center;
+  font-family: var(--f_edu);
 }
 .lugar_enlace img{
     margin-top: 0.5rem;
     padding: 0;
 }
-.falta{
+.falta{  
   margin: 0;
+  text-shadow: 4px 4px 6px rgba(255, 183, 128, 0.846);
 }
 
 #countdown {
@@ -124,18 +128,20 @@ footer {
     min-width: 480px;
   }
   .titulo {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     font-size: 1.2rem;
   }
   .logo {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .subtitulo {
-    padding: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: .5rem;
+    margin-bottom: 1.5rem;
   }
   .imagen{
+    padding: .5rem;
     background-size: 120px;
   }
   img {
@@ -153,8 +159,12 @@ footer {
   .lugar_enlace {
     font-size: 1.3rem;
   }
+  .falta{
+    padding: .8rem;
+    font-size: 1.5rem;
+  }
   #countdown {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   footer {
     padding-top: 0;
