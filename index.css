@@ -4,6 +4,7 @@
   --f_libre_b: "Libre Baskerville", serif;
   --f_monts: "Montserrat", sans-serif;
   --c_oro: #ebcf76;
+  --c_gris_oscuro: #4b4b4b;
   /* --c_oro: #e4cd80; */
 }
 a {
@@ -75,8 +76,7 @@ img {
   font-weight: 500;
 }
 .lugar{
-    padding: 1rem;
-    
+    padding: 1rem;    
 }
 
 
@@ -95,20 +95,25 @@ img {
     margin-top: 0.5rem;
     padding: 0;
 }
+.falta{
+  margin: 0;
+}
 
 #countdown {
+  padding-top: 0;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 footer {
   padding-bottom: 1rem;
   font-size: 0.7rem;
-  color: #3e3e3e;
+  color: var(--c_gris_oscuro);
 }
 .firma {
   font-family: var(--f_damion);
   font-size: 1rem;
-  color: #3f3f3f;
+  color: var(--c_gris_oscuro);
 }
 .firma:hover {
   color: var(--c_oro);
@@ -137,22 +142,22 @@ footer {
     padding: 1rem;
   }
   .datos {
-    padding: 2.5rem;
+    padding: 1.5rem 3rem;
     font-size: 1.2rem;
   }
   .fecha,
   .hora {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 600;
   }
   .lugar_enlace {
-    font-size: 1.4rem;;
+    font-size: 1.3rem;
   }
   #countdown {
     font-size: 1.6rem;
   }
   footer {
-    padding-top: 1rem;
+    padding-top: 0;
     font-size: 1rem;
   }
 }
