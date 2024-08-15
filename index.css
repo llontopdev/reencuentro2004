@@ -43,6 +43,14 @@ main {
   font-family: var(--f_libre_b);
   font-size: 1.5rem;
 }
+
+.imagen{
+  background-image: url("logo_fya431.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
+
 img {
   padding: 0.5rem;
 }
@@ -111,7 +119,8 @@ footer {
     min-width: 480px;
   }
   .titulo {
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.2rem;
   }
   .logo {
@@ -120,6 +129,12 @@ footer {
   .subtitulo {
     padding: 1rem;
     font-size: 2rem;
+  }
+  .imagen{
+    background-size: 120px;
+  }
+  img {
+    padding: 1rem;
   }
   .datos {
     padding: 2.5rem;
