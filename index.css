@@ -29,8 +29,17 @@ body {
   align-items: center;
   min-height: 100dvh;
   text-align: center;
-  background-color: #000000;
+  background-color: #101010;  
 }
+
+.bg-salon{
+  background-image: radial-gradient(circle at center,transparent, rgba(0, 0, 0, 1)), url('salon-eventos.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .9;
+}
+
 main {
   max-width: 350px;
   background-image: url("back2.jpg");
@@ -39,6 +48,8 @@ main {
   background-size: cover;
   color: var(--c_oro); /* Dorado oscuro */
   padding: 1rem;
+  padding: 0 30px;
+  border-radius: 10px;
 }
 
 .titulo {
@@ -130,12 +141,11 @@ main {
 
 footer {
   padding-bottom: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: var(--c_gris_oscuro);
 }
 .firma {
   font-family: var(--f_damion);
-  font-size: 1rem;
   color: var(--c_gris_oscuro);
 }
 .firma:hover {
@@ -145,6 +155,8 @@ footer {
 @media (min-width: 678px) {
   main {
     min-width: 480px;
+    border-top: 15px solid black;
+    border-bottom: 15px solid black;
   }
   .titulo {
     padding-top: 1.5rem;

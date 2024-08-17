@@ -25,24 +25,22 @@
       <div class="datos">
         <div class="fecha">26 <div class="fecha_sub">OCT</div></div>
         <div class="hora">8 <div class="hora_sub">PM</div></div>
-                          
-          
           <a class="lugar_enlace" href="https://maps.app.goo.gl/t9sSE8AhyMi8Q1Ne7" target="_blank"><img src="google-maps.png" alt="maps"> La Capullana</a> 
         
       </div>
             
-      <div class="falta">Falta <div id="countdown"></div> </div>
+      <div class="falta"> <span class="texto-falta">Falta</span>  <div id="countdown"></div> </div>
 
       <footer>
       <p>2024 - <span><a class="firma" href="/">llontopdev</a></span> </p>
     </footer>
       
-    </main>
+    </main>    
 
-    
+    <script> 
 
-    <script>  
       const countDownDate = new Date("Oct 26, 2024 20:00:00").getTime();
+      const DurationEvent = 6 * 60 * 60 * 1000; // 6 horas en milisegundos
     
       // Actualiza la cuenta regresiva cada segundo
       const x = setInterval(function() {
@@ -65,9 +63,16 @@
     
         // Si la cuenta regresiva ha terminado, escribe algún mensaje
         if (distance < 0) {
+          document.querySelector('.texto-falta').innerHTML ='';
           clearInterval(x);
-          document.getElementById("countdown").innerHTML = "¡EXPIRO!";
-        }
+          if (Math.abs(distance) < DurationEvent) {
+              document.getElementById("countdown").innerHTML = "Disfruta el evento";
+              const body =document.body;
+              body.classList.add('bg-salon')
+          } else {
+              document.getElementById("countdown").innerHTML = "Evento finalizado <br> Gracias a todos";
+          }
+      }
       }, 1000);
     </script>
   </body>
